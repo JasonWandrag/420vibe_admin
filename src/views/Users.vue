@@ -102,7 +102,7 @@
                 </button>
               </td>
               <td>{{ user.orderCount || 0 }}</td>
-              <td class="font-medium">${{ user.totalSpent?.toFixed(2) || '0.00' }}</td>
+              <td class="font-medium">R{{ user.totalSpent?.toFixed(2) || '0.00' }}</td>
               <td>{{ formatDate(user.createdAt) }}</td>
               <td>
                 <div class="flex items-center space-x-2">

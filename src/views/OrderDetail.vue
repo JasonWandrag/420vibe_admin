@@ -44,7 +44,7 @@
             </div>
             <div>
               <label class="text-sm font-medium text-gray-500">Total Amount</label>
-              <p class="text-gray-900 font-semibold">${{ ordersStore.currentOrder.total?.toFixed(2) || '0.00' }}</p>
+              <p class="text-gray-900 font-semibold">R{{ ordersStore.currentOrder.total?.toFixed(2) || '0.00' }}</p>
             </div>
           </div>
         </div>
@@ -100,8 +100,8 @@
                     </div>
                   </td>
                   <td>{{ item.quantity }}</td>
-                  <td>${{ item.price?.toFixed(2) || '0.00' }}</td>
-                  <td class="font-medium">${{ (item.price * item.quantity).toFixed(2) }}</td>
+                  <td>R{{ item.price?.toFixed(2) || '0.00' }}</td>
+                  <td class="font-medium">R{{ (item.price * item.quantity).toFixed(2) }}</td>
                 </tr>
               </tbody>
             </table>
@@ -154,20 +154,20 @@
           <div class="space-y-2">
             <div class="flex justify-between">
               <span class="text-gray-600">Subtotal:</span>
-              <span>${{ ordersStore.currentOrder.subtotal?.toFixed(2) || '0.00' }}</span>
+              <span>R{{ ordersStore.currentOrder.subtotal?.toFixed(2) || '0.00' }}</span>
             </div>
             <div class="flex justify-between">
               <span class="text-gray-600">Tax:</span>
-              <span>${{ ordersStore.currentOrder.tax?.toFixed(2) || '0.00' }}</span>
+              <span>R{{ ordersStore.currentOrder.tax?.toFixed(2) || '0.00' }}</span>
             </div>
             <div class="flex justify-between">
               <span class="text-gray-600">Shipping:</span>
-              <span>${{ ordersStore.currentOrder.shipping?.toFixed(2) || '0.00' }}</span>
+              <span>R{{ ordersStore.currentOrder.shipping?.toFixed(2) || '0.00' }}</span>
             </div>
             <hr class="my-2">
             <div class="flex justify-between font-semibold">
               <span>Total:</span>
-              <span>${{ ordersStore.currentOrder.total?.toFixed(2) || '0.00' }}</span>
+              <span>R{{ ordersStore.currentOrder.total?.toFixed(2) || '0.00' }}</span>
             </div>
           </div>
         </div>

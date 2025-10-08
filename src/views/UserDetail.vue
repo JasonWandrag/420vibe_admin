@@ -80,7 +80,7 @@
                       {{ order.status }}
                     </span>
                   </td>
-                  <td class="font-medium">${{ order.total?.toFixed(2) || '0.00' }}</td>
+                  <td class="font-medium">R{{ order.total?.toFixed(2) || '0.00' }}</td>
                 </tr>
               </tbody>
             </table>
@@ -101,12 +101,12 @@
             </div>
             <div class="flex justify-between">
               <span class="text-gray-600">Total Spent:</span>
-              <span class="font-medium">${{ usersStore.currentUser.totalSpent?.toFixed(2) || '0.00' }}</span>
+              <span class="font-medium">R{{ usersStore.currentUser.totalSpent?.toFixed(2) || '0.00' }}</span>
             </div>
             <div class="flex justify-between">
               <span class="text-gray-600">Average Order:</span>
               <span class="font-medium">
-                ${{ usersStore.currentUser.orderCount > 0 ? (usersStore.currentUser.totalSpent / usersStore.currentUser.orderCount).toFixed(2) : '0.00' }}
+                R{{ usersStore.currentUser.orderCount > 0 ? (usersStore.currentUser.totalSpent / usersStore.currentUser.orderCount).toFixed(2) : '0.00' }}
               </span>
             </div>
           </div>

@@ -89,7 +89,7 @@
                   {{ order.status }}
                 </span>
               </td>
-              <td>${{ order.total?.toFixed(2) || '0.00' }}</td>
+              <td>R{{ order.total?.toFixed(2) || '0.00' }}</td>
               <td>{{ formatDate(order.createdAt) }}</td>
             </tr>
           </tbody>
@@ -132,7 +132,7 @@
                 </div>
               </td>
               <td>{{ product.category }}</td>
-              <td>${{ product.price?.toFixed(2) || '0.00' }}</td>
+              <td>R{{ product.price?.toFixed(2) || '0.00' }}</td>
               <td>
                 <span class="status-badge" :class="product.active ? 'status-active' : 'status-inactive'">
                   {{ product.active ? 'Active' : 'Inactive' }}

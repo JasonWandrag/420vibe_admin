@@ -90,7 +90,7 @@
                   {{ product.category }}
                 </span>
               </td>
-              <td class="font-medium">${{ product.price?.toFixed(2) || '0.00' }}</td>
+              <td class="font-medium">R{{ product.price?.toFixed(2) || '0.00' }}</td>
               <td>
                 <button
                   @click="toggleProductStatus(product.id)"

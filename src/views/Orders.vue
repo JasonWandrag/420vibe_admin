@@ -109,7 +109,7 @@
                 </div>
               </td>
               <td>{{ order.items?.length || 0 }} items</td>
-              <td class="font-medium">${{ order.total?.toFixed(2) || '0.00' }}</td>
+              <td class="font-medium">R{{ order.total?.toFixed(2) || '0.00' }}</td>
               <td>
                 <span class="status-badge" :class="`status-${order.status}`">
                   {{ order.status }}
